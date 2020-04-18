@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"                   content="ie=edge">
+    <script src="path/to/chartjs/dist/Chart.js"></script>
+    <script                                             src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3"></script>
+    <title>Stock</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="style.css">
+</head>
+  
+<body> 
+    <div class="container">
+        <h1>Stocks Lookup</h1>
+        <!-- <a href="https://iexcloud.io">Data provided by IEX Cloud</a> -->
+
+        <form id="js-form">
+            <label for="search-term">Search symbol:</label>
+            <input type="text" placeholder="e.g: AAPL" name="search-term" id="js-search-term" required>
+
+            <input type="submit" value="Go!">
+        </form>
+
+        <p id="js-error-message" class="error-message"></p>
+          <section id="results" class="hidden">
+        </section>
+
+        <section class="time" id="time"> 
+          <input type="submit" value="5D" id="time1">
+          <input type="submit" value="1M" id="time2">
+          <input type="submit" value="6M" id="time3">
+          <input type="submit" value="1Y" id="time4">
+        </section>
+    </div>
+    
+
+
+  <!-- <div class="container"> -->
+    <canvas id="myChart" width="1600" height="900"> </canvas>
+  <!-- </div> -->
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
